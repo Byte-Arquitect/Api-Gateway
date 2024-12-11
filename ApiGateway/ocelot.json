@@ -1,0 +1,17 @@
+{
+  "Routes": [
+    {
+      "RoteName": "Test", 
+      "DownstreamPathTemplate": "/v1/test/{nombre}", 
+      "DownstreamScheme": "http", 
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5144
+        }
+      ],
+      "UpstreamPathTemplate": "/grpc/test/{nombre}",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+}
