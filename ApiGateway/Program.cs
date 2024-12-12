@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Cargar la configuración de Ocelot
 builder.Configuration.AddJsonFile("ocelot.json" , optional: false, reloadOnChange: true);
 builder.Configuration.AddJsonFile("userEndpoints.json" , optional: false, reloadOnChange: true); //User Service Endpoints
+builder.Configuration.AddJsonFile("career.json" , optional: false, reloadOnChange: true); //Career Service Endpoints
 builder.Services.AddOcelot();
 
 builder.Logging.ClearProviders();

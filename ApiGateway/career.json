@@ -1,0 +1,70 @@
+{
+    "Routes": [
+        {
+            "RouteName" : "GetCareers",
+            "DownstreamPathTemplate" : "/career",
+            "DownstreamScheme" : "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host" : "localhost",
+                    "Port" : 5093
+                }
+            ],
+            "UpstreamPathTemplate" : "/career/",
+            "UpstreamHttpMethod" : [ "GET"]
+        },
+        {
+            "RouteName" : "GetSubjects",
+            "DownstreamPathTemplate" : "/subject",
+            "DownstreamScheme" : "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host" : "localhost",
+                    "Port" : 5093
+                }
+            ],
+            "UpstreamPathTemplate" : "/subject/",
+            "UpstreamHttpMethod" : [ "GET"]
+        },
+        {
+            "RouteName" : "GetPreRequisitesMap",
+            "DownstreamPathTemplate" : "/subject/prerequisites-map",
+            "DownstreamScheme" : "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host" : "localhost",
+                    "Port" : 5093
+                }
+            ],
+            "UpstreamPathTemplate" : "/subject/prerequisites-map",
+            "UpstreamHttpMethod" : [ "GET"]
+        },
+        {
+            "RouteName" : "GetPostRequisitesMap",
+            "DownstreamPathTemplate" : "/subject/postrequisites-map",
+            "DownstreamScheme" : "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host" : "localhost",
+                    "Port" : 5093
+                }
+            ],
+            "UpstreamPathTemplate" : "/subject/postrequisites-map",
+            "UpstreamHttpMethod" : [ "GET"]
+        },
+        {
+            "RouteName" : "GetPrerequisiteObjects",
+            "DownstreamPathTemplate" : "/subject/prerequisites-map/objects",
+            "DownstreamScheme" : "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host" : "localhost",
+                    "Port" : 5093
+                }
+            ],
+            "UpstreamPathTemplate" : "/subject/prerequisites-map/objects",
+            "UpstreamHttpMethod" : [ "GET"]
+        }
+
+    ]
+}

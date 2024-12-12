@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\frank\\OneDrive\\Escritorio\\Taller2_Arquitectura\\Api-Gateway\\ApiGateway\\ApiGateway.csproj": {}
+    "C:\\Users\\buzet\\Desktop\\Arquitectura de sistemas\\Api-Gateway\\ApiGateway\\ApiGateway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\frank\\OneDrive\\Escritorio\\Taller2_Arquitectura\\Api-Gateway\\ApiGateway\\ApiGateway.csproj": {
+    "C:\\Users\\buzet\\Desktop\\Arquitectura de sistemas\\Api-Gateway\\ApiGateway\\ApiGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\frank\\OneDrive\\Escritorio\\Taller2_Arquitectura\\Api-Gateway\\ApiGateway\\ApiGateway.csproj",
+        "projectUniqueName": "C:\\Users\\buzet\\Desktop\\Arquitectura de sistemas\\Api-Gateway\\ApiGateway\\ApiGateway.csproj",
         "projectName": "ApiGateway",
-        "projectPath": "C:\\Users\\frank\\OneDrive\\Escritorio\\Taller2_Arquitectura\\Api-Gateway\\ApiGateway\\ApiGateway.csproj",
-        "packagesPath": "C:\\Users\\frank\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\frank\\OneDrive\\Escritorio\\Taller2_Arquitectura\\Api-Gateway\\ApiGateway\\obj\\",
+        "projectPath": "C:\\Users\\buzet\\Desktop\\Arquitectura de sistemas\\Api-Gateway\\ApiGateway\\ApiGateway.csproj",
+        "packagesPath": "C:\\Users\\buzet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\buzet\\Desktop\\Arquitectura de sistemas\\Api-Gateway\\ApiGateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\frank\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\buzet\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
