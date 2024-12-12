@@ -1,0 +1,18 @@
+{
+"Routes": [
+        {
+            "RouteName" : "Login",
+            "DownstreamPathTemplate" : "/api/Auth/login",
+            "DownstreamScheme" : "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host" : "localhost",
+                    "Port" : 5238
+                }
+            ],
+            "UpstreamPathTemplate" : "/login",
+            "UpstreamHttpMethod" : [ "POST"]
+        }
+
+   ]
+}

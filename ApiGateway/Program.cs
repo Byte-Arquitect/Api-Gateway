@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddJsonFile("ocelot.json" , optional: false, reloadOnChange: true);
 builder.Configuration.AddJsonFile("userEndpoints.json" , optional: false, reloadOnChange: true); //User Service Endpoints
 builder.Configuration.AddJsonFile("career.json" , optional: false, reloadOnChange: true); //Career Service Endpoints
+builder.Configuration.AddJsonFile("access.json" , optional: false, reloadOnChange: true); //Acccess Service Endpoints
 builder.Services.AddOcelot();
 
 builder.Logging.ClearProviders();
