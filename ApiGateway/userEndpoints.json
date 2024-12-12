@@ -12,6 +12,32 @@
       ],
       "UpstreamPathTemplate": "/grpc/test/{nombre}",
       "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "RouteName": "Register",
+      "DownstreamPathTemplate": "/grpc/auth/Register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5144
+        }
+      ],
+      "UpstreamPathTemplate": "/Register",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "RouteName": "Update-Password",
+      "DownstreamPathTemplate": "/grpc/auth/UpdatePassword",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5144
+        }
+      ],
+      "UpstreamPathTemplate": "/update-password",
+      "UpstreamHttpMethod": [ "PUT" ]
     }
   ]
 }
