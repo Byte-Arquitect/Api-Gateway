@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\buzet\\Desktop\\Arquitectura de sistemas\\Api-Gateway\\ApiGateway\\ApiGateway.csproj": {}
+    "C:\\Users\\frank\\OneDrive\\Escritorio\\Taller2_Arquitectura\\Api-Gateway\\ApiGateway\\ApiGateway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\buzet\\Desktop\\Arquitectura de sistemas\\Api-Gateway\\ApiGateway\\ApiGateway.csproj": {
+    "C:\\Users\\frank\\OneDrive\\Escritorio\\Taller2_Arquitectura\\Api-Gateway\\ApiGateway\\ApiGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\buzet\\Desktop\\Arquitectura de sistemas\\Api-Gateway\\ApiGateway\\ApiGateway.csproj",
+        "projectUniqueName": "C:\\Users\\frank\\OneDrive\\Escritorio\\Taller2_Arquitectura\\Api-Gateway\\ApiGateway\\ApiGateway.csproj",
         "projectName": "ApiGateway",
-        "projectPath": "C:\\Users\\buzet\\Desktop\\Arquitectura de sistemas\\Api-Gateway\\ApiGateway\\ApiGateway.csproj",
-        "packagesPath": "C:\\Users\\buzet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\buzet\\Desktop\\Arquitectura de sistemas\\Api-Gateway\\ApiGateway\\obj\\",
+        "projectPath": "C:\\Users\\frank\\OneDrive\\Escritorio\\Taller2_Arquitectura\\Api-Gateway\\ApiGateway\\ApiGateway.csproj",
+        "packagesPath": "C:\\Users\\frank\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\frank\\OneDrive\\Escritorio\\Taller2_Arquitectura\\Api-Gateway\\ApiGateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\buzet\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\frank\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -43,9 +43,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.6, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.3.0, )"
             },
             "Ocelot": {
               "target": "Package",
@@ -75,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

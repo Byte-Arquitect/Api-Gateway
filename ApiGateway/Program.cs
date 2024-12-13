@@ -1,14 +1,29 @@
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+
 
 var builder = WebApplication.CreateBuilder(args);
+var jwtSettings = builder.Configuration.GetSection("JwtSettings");
+var authority = jwtSettings["Authority"];
+var audience = jwtSettings["Audience"];
+var key = jwtSettings["MyKey"];
+builder.Services
+    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(key, options =>
+    {
+        options.Authority = authority;
+        options.Audience = audience;
+    });
 
-// Cargar la configuración de Ocelot
-builder.Configuration.AddJsonFile("ocelot.json" , optional: false, reloadOnChange: true);
-builder.Configuration.AddJsonFile("userEndpoints.json" , optional: false, reloadOnChange: true); //User Service Endpoints
-builder.Configuration.AddJsonFile("career.json" , optional: false, reloadOnChange: true); //Career Service Endpoints
-builder.Configuration.AddJsonFile("access.json" , optional: false, reloadOnChange: true); //Acccess Service Endpoints
+
+var files = new[] { "ocelot.json", "userEndpoints.json", "career.json","access.json", "appsettings.json" };
+foreach (var file in files)
+{
+    builder.Configuration.AddJsonFile(file, optional: false, reloadOnChange: true);
+}
 builder.Services.AddOcelot();
 
 builder.Logging.ClearProviders();
@@ -17,6 +32,8 @@ builder.Logging.SetMinimumLevel(LogLevel.Information);
 
 var app = builder.Build();
 
+
 app.UseOcelot().Wait();
+
 
 app.Run();
