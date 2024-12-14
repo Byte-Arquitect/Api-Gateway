@@ -8,11 +8,7 @@ using Ocelot.Middleware;
 var builder = WebApplication.CreateBuilder(args);
 
 // Cargar la configuración de Ocelot
-var files = new[] { "career.json", "userEndpoints.json", "access.json" };
-foreach (var file in files)
-{
-    builder.Configuration.AddJsonFile(file, optional: false, reloadOnChange: true);
-}
+
 
 // Acceder a la configuración de JwtSettings
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
@@ -35,6 +31,12 @@ builder
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)), // Debe coincidir con la clave usada para firmar el token
         };
     });
+
+var files = new[] { "ocelot.json" };
+foreach (var file in files)
+{
+    builder.Configuration.AddJsonFile(file, optional: false, reloadOnChange: true);
+}
 
 // Agregar los servicios de Ocelot
 builder.Services.AddOcelot();

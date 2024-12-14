@@ -1,4 +1,128 @@
 {
   "Routes": [
-        ]
+         {
+            "RouteName" : "GetCareers",
+            "DownstreamPathTemplate" : "/career",
+            "DownstreamScheme" : "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host" : "localhost",
+                    "Port" : 5093
+                }
+            ],
+            "UpstreamPathTemplate" : "/career/",
+            "UpstreamHttpMethod" : [ "GET"],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKeys":  ["Bearer"]
+            }
+        },
+        {
+            "RouteName" : "GetPreRequisitesMap",
+            "DownstreamPathTemplate" : "/subject/prerequisites-map",
+            "DownstreamScheme" : "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host" : "localhost",
+                    "Port" : 5093
+                }
+            ],
+            "UpstreamPathTemplate" : "/subject/prerequisites-map",
+            "UpstreamHttpMethod" : [ "GET"],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKeys":  ["Bearer"]
+            }
+        },
+        {
+            "RouteName" : "GetPostRequisitesMap",
+            "DownstreamPathTemplate" : "/subject/postrequisites-map",
+            "DownstreamScheme" : "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host" : "localhost",
+                    "Port" : 5093
+                }
+            ],
+            "UpstreamPathTemplate" : "/subject/postrequisites-map",
+            "UpstreamHttpMethod" : [ "GET"],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKeys":  ["Bearer"]
+            }
+        },        
+        {
+            "RouteName" : "GetSubjects",
+            "DownstreamPathTemplate" : "/subject",
+            "DownstreamScheme" : "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host" : "localhost",
+                    "Port" : 5093
+                }
+            ],
+            "UpstreamPathTemplate" : "/subject/",
+            "UpstreamHttpMethod" : [ "GET"],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKeys":  ["Bearer"]
+            }
+        },
+        {
+            "RouteName" : "GetPrerequisiteObjects",
+            "DownstreamPathTemplate" : "/subject/prerequisites-map/objects",
+            "DownstreamScheme" : "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host" : "localhost",
+                    "Port" : 5093
+                }
+            ],
+            "UpstreamPathTemplate" : "/subject/prerequisites-map/objects",
+            "UpstreamHttpMethod" : [ "GET"],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKeys":  ["Bearer"]
+            }
+            
+        },
+        {
+            "RouteName" : "Login",
+            "DownstreamPathTemplate" : "/api/Auth/login",
+            "DownstreamScheme" : "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host" : "localhost",
+                    "Port" : 5238
+                }
+            ],
+            "UpstreamPathTemplate" : "/login",
+            "UpstreamHttpMethod" : [ "POST"]
+        },
+        {
+      "RouteName": "Update-Password",
+      "DownstreamPathTemplate": "/grpc/auth/UpdatePassword",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5144
+        }
+      ],
+      "UpstreamPathTemplate": "/update-password",
+      "UpstreamHttpMethod": [ "PUT" ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKeys":  ["Bearer"]
+            }
+    },
+    {
+      "RouteName": "Register",
+      "DownstreamPathTemplate": "/grpc/auth/Register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5144
+        }
+      ],
+      "UpstreamPathTemplate": "/Register",
+      "UpstreamHttpMethod": [ "POST" ]
+    }
+
+  ]
 }

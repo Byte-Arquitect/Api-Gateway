@@ -11,8 +11,43 @@
                 }
             ],
             "UpstreamPathTemplate" : "/career/",
-            "UpstreamHttpMethod" : [ "GET"]
+            "UpstreamHttpMethod" : [ "GET"],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKeys":  ["Bearer"]
+            }
         },
+        {
+            "RouteName" : "GetPreRequisitesMap",
+            "DownstreamPathTemplate" : "/subject/prerequisites-map",
+            "DownstreamScheme" : "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host" : "localhost",
+                    "Port" : 5093
+                }
+            ],
+            "UpstreamPathTemplate" : "/subject/prerequisites-map",
+            "UpstreamHttpMethod" : [ "GET"],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKeys":  ["Bearer"]
+            }
+        },
+        {
+            "RouteName" : "GetPostRequisitesMap",
+            "DownstreamPathTemplate" : "/subject/postrequisites-map",
+            "DownstreamScheme" : "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host" : "localhost",
+                    "Port" : 5093
+                }
+            ],
+            "UpstreamPathTemplate" : "/subject/postrequisites-map",
+            "UpstreamHttpMethod" : [ "GET"],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKeys":  ["Bearer"]
+            }
+        },        
         {
             "RouteName" : "GetSubjects",
             "DownstreamPathTemplate" : "/subject",
@@ -30,32 +65,6 @@
             }
         },
         {
-            "RouteName" : "GetPreRequisitesMap",
-            "DownstreamPathTemplate" : "/subject/prerequisites-map",
-            "DownstreamScheme" : "http",
-            "DownstreamHostAndPorts": [
-                {
-                    "Host" : "localhost",
-                    "Port" : 5093
-                }
-            ],
-            "UpstreamPathTemplate" : "/subject/prerequisites-map",
-            "UpstreamHttpMethod" : [ "GET"]
-        },
-        {
-            "RouteName" : "GetPostRequisitesMap",
-            "DownstreamPathTemplate" : "/subject/postrequisites-map",
-            "DownstreamScheme" : "http",
-            "DownstreamHostAndPorts": [
-                {
-                    "Host" : "localhost",
-                    "Port" : 5093
-                }
-            ],
-            "UpstreamPathTemplate" : "/subject/postrequisites-map",
-            "UpstreamHttpMethod" : [ "GET"]
-        },
-        {
             "RouteName" : "GetPrerequisiteObjects",
             "DownstreamPathTemplate" : "/subject/prerequisites-map/objects",
             "DownstreamScheme" : "http",
@@ -66,7 +75,10 @@
                 }
             ],
             "UpstreamPathTemplate" : "/subject/prerequisites-map/objects",
-            "UpstreamHttpMethod" : [ "GET"]
+            "UpstreamHttpMethod" : [ "GET"],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKeys":  ["Bearer"]
+            }
             
         }
     ]
