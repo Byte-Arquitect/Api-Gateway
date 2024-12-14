@@ -5,8 +5,5 @@ using System.Threading.Tasks;
 
 namespace Src
 {
-    public class JwtExtensions
-    {
-        
-    }
+    public class JwtExtensions { }
 }

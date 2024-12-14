@@ -1,7 +1,4 @@
 {
-  "Routes": [],
-  "Includes": [
-    "userEndpoints.json",
-    "career.json"
-  ]
+  "Routes": [
+        ]
 }

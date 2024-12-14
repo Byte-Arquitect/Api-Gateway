@@ -26,8 +26,7 @@
             "UpstreamPathTemplate" : "/subject/",
             "UpstreamHttpMethod" : [ "GET"],
             "AuthenticationOptions": {
-                "AuthenticationProviderKeys": [ "Bearer", "MyKey" ],
-                "AllowedScopes": []
+                "AuthenticationProviderKeys":  ["Bearer"]
             }
         },
         {

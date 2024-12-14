@@ -37,7 +37,10 @@
         }
       ],
       "UpstreamPathTemplate": "/update-password",
-      "UpstreamHttpMethod": [ "PUT" ]
+      "UpstreamHttpMethod": [ "PUT" ],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKeys":  ["Bearer"]
+            }
     }
   ]
 }
