@@ -95,34 +95,82 @@
             "UpstreamHttpMethod" : [ "POST"]
         },
         {
-      "RouteName": "Update-Password",
-      "DownstreamPathTemplate": "/grpc/auth/UpdatePassword",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 5144
-        }
-      ],
-      "UpstreamPathTemplate": "/update-password",
-      "UpstreamHttpMethod": [ "PUT" ],
+            "RouteName": "Update-Password",
+            "DownstreamPathTemplate": "/grpc/auth/UpdatePassword",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                "Host": "localhost",
+                "Port": 5144
+                }
+            ],
+            "UpstreamPathTemplate": "/update-password",
+            "UpstreamHttpMethod": [ "PUT" ],
             "AuthenticationOptions": {
-                "AuthenticationProviderKeys":  ["Bearer"]
+                    "AuthenticationProviderKeys":  ["Bearer"]
             }
-    },
-    {
-      "RouteName": "Register",
-      "DownstreamPathTemplate": "/grpc/auth/Register",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
+        },
         {
-          "Host": "localhost",
-          "Port": 5144
+            "RouteName": "SetProgress",
+            "DownstreamPathTemplate": "/grpc/user/set-progress",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                "Host": "localhost",
+                "Port": 5144
+                }
+            ],
+            "UpstreamPathTemplate": "/my-progress",
+            "UpstreamHttpMethod": [ "PATCH" ],
+            "AuthenticationOptions": {
+                    "AuthenticationProviderKeys":  ["Bearer"]
+            }
+        },
+        {
+            "RouteName": "GetProgress",
+            "DownstreamPathTemplate": "/grpc/user/get-progress",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                "Host": "localhost",
+                "Port": 5144
+                }
+            ],
+            "UpstreamPathTemplate": "/my-progress",
+            "UpstreamHttpMethod": [ "GET" ],
+            "AuthenticationOptions": {
+                    "AuthenticationProviderKeys":  ["Bearer"]
+            }
+        },
+        {
+            "RouteName": "GetProfile",
+            "DownstreamPathTemplate": "/grpc/user/get-profile",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                "Host": "localhost",
+                "Port": 5144
+                }
+            ],
+            "UpstreamPathTemplate": "/profile",
+            "UpstreamHttpMethod": [ "GET" ],
+            "AuthenticationOptions": {
+                    "AuthenticationProviderKeys":  ["Bearer"]
+            }
+        },
+        {
+            "RouteName": "Register",
+            "DownstreamPathTemplate": "/grpc/auth/Register",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                "Host": "localhost",
+                "Port": 5144
+                }
+            ],
+            "UpstreamPathTemplate": "/Register",
+            "UpstreamHttpMethod": [ "POST" ]
         }
-      ],
-      "UpstreamPathTemplate": "/Register",
-      "UpstreamHttpMethod": [ "POST" ]
-    }
 
   ]
 }
