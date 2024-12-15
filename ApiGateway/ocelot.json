@@ -159,6 +159,22 @@
             }
         },
         {
+            "RouteName": "EditProfile",
+            "DownstreamPathTemplate": "/grpc/user/edit-profile",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                "Host": "localhost",
+                "Port": 5144
+                }
+            ],
+            "UpstreamPathTemplate": "/update-profile",
+            "UpstreamHttpMethod": [ "PATCH" ],
+            "AuthenticationOptions": {
+                    "AuthenticationProviderKeys":  ["Bearer"]
+            }
+        },
+        {
             "RouteName": "Register",
             "DownstreamPathTemplate": "/grpc/auth/Register",
             "DownstreamScheme": "http",
