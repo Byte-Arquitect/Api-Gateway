@@ -1,0 +1,508 @@
+{
+	"info": {
+		"_postman_id": "535cc1c1-39bb-438c-b4f4-e136c9725e61",
+		"name": "ApiGateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30263697",
+		"_collection_link": "https://taller-arquidesistemas.postman.co/workspace/Taller-ArquiDeSistemas-Workspac~e7e8dcf8-1986-483a-94b2-d2812cf0a4a5/collection/33689763-535cc1c1-39bb-438c-b4f4-e136c9725e61?action=share&source=collection_link&creator=30263697"
+	},
+	"item": [
+		{
+			"name": "Careers",
+			"item": [
+				{
+					"name": "Get Subrequisites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5111/subject/prerequisites-map",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5111",
+							"path": [
+								"subject",
+								"prerequisites-map"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Subjects",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ3ZW5hczMzM0BleGFtcC5jb20iLCJqdGkiOiI0MDI0Y2QzYS04MzFkLTRhNTUtOWJkNC1jOWQzMjAyMGYxZTEiLCJVc2VyVXVpZCI6IjE0IiwiZXhwIjoxNzY1NzQyMzM2LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo1MjM4IiwiYXVkIjoiQWNjZXNzX1NlcnZpY2UifQ.l6nkKvNOUa0Pv570CEngdOWHB1x6qse2AIK19Jy8aa8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0QGV4YW1wbGUuY29tIiwianRpIjoiZGI4NWQ0YzItYmQ4Ny00ZjhkLTgzZjQtOTA2ODE1NDU2MTdmIiwiVXNlclV1aWQiOiIzQzJBRjJFMS1EQUE5LTQzRUItOEM4RS05NDE0MEIxRDc5MTIiLCJleHAiOjE3MzQyMDA1ODcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjUyMzgiLCJhdWQiOiJBY2Nlc3NfU2VydmljZSJ9.TJKjwrc8wVOrd30fNHN4Zu_T08KFA6AgrQ-rD1K9hBE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5111/subject/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5111",
+							"path": [
+								"subject",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Career",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ3ZW5hczMzM0BleGFtcC5jb20iLCJqdGkiOiI0MDI0Y2QzYS04MzFkLTRhNTUtOWJkNC1jOWQzMjAyMGYxZTEiLCJVc2VyVXVpZCI6IjE0IiwiZXhwIjoxNzY1NzQyMzM2LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo1MjM4IiwiYXVkIjoiQWNjZXNzX1NlcnZpY2UifQ.l6nkKvNOUa0Pv570CEngdOWHB1x6qse2AIK19Jy8aa8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5111/career/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5111",
+							"path": [
+								"career",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Prerequisites-map",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5111/subject/prerequisites-map/objects",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5111",
+							"path": [
+								"subject",
+								"prerequisites-map",
+								"objects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Prerequisites-map Objects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5111/subject/postrequisites-map",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5111",
+							"path": [
+								"subject",
+								"postrequisites-map"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Update password",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJsbG9ib3NAZ21haWwuY29tIiwianRpIjoiZGQ0MmJhZWQtNWU4NC00ZjdkLWJlYjktZDZkNzY4NDc1YWQzIiwiVXNlclV1aWQiOiIyIiwiZXhwIjoxNzY1ODE2MTU1LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo1MjM4IiwiYXVkIjoiQWNjZXNzX1NlcnZpY2UifQ.JvvhepmnZYWT1kT7CQs_4ZRGujidwZw9uPDRjCRzMKQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\":\"Franko\",\r\n    \"repeatedPassword\":\"Franko\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5111/update-password",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5111",
+									"path": [
+										"update-password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "RegisterUser",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"John\",\r\n  \"firstlastname\": \"Doe\",\r\n  \"secondlastname\": \"Smith\",\r\n  \"rut\": \"23545678-9\",\r\n  \"email\": \"wqwqqwddo@example.com\",\r\n  \"careerId\": 1,\r\n  \"password\": \"securePassword123\",\r\n  \"repeatedPassword\": \"securePassword123\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5111/Register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5111",
+									"path": [
+										"Register"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Set Progress",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ3ZW5hczMzM0BleGFtcC5jb20iLCJqdGkiOiI0MDI0Y2QzYS04MzFkLTRhNTUtOWJkNC1jOWQzMjAyMGYxZTEiLCJVc2VyVXVpZCI6IjE0IiwiZXhwIjoxNzY1NzQyMzM2LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo1MjM4IiwiYXVkIjoiQWNjZXNzX1NlcnZpY2UifQ.l6nkKvNOUa0Pv570CEngdOWHB1x6qse2AIK19Jy8aa8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"subjectsCodesToAdd\": [\r\n    \"PII-001\"\r\n  ],\r\n  \"subjectsCodesToDelete\": [\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5111/my-progress",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5111",
+							"path": [
+								"my-progress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Progress",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ3ZW5hczMzM0BleGFtcC5jb20iLCJqdGkiOiI0MDI0Y2QzYS04MzFkLTRhNTUtOWJkNC1jOWQzMjAyMGYxZTEiLCJVc2VyVXVpZCI6IjE0IiwiZXhwIjoxNzY1NzQyMzM2LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo1MjM4IiwiYXVkIjoiQWNjZXNzX1NlcnZpY2UifQ.l6nkKvNOUa0Pv570CEngdOWHB1x6qse2AIK19Jy8aa8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5111/my-progress",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5111",
+							"path": [
+								"my-progress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit User Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ3ZW5hczMzM0BleGFtcC5jb20iLCJqdGkiOiI0MDI0Y2QzYS04MzFkLTRhNTUtOWJkNC1jOWQzMjAyMGYxZTEiLCJVc2VyVXVpZCI6IjE0IiwiZXhwIjoxNzY1NzQyMzM2LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo1MjM4IiwiYXVkIjoiQWNjZXNzX1NlcnZpY2UifQ.l6nkKvNOUa0Pv570CEngdOWHB1x6qse2AIK19Jy8aa8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Franko\",\r\n    \"firstLastName\":\"Lola\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5111/edit-profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5111",
+							"path": [
+								"edit-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user Profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ3ZW5hczMzM0BleGFtcC5jb20iLCJqdGkiOiI0MDI0Y2QzYS04MzFkLTRhNTUtOWJkNC1jOWQzMjAyMGYxZTEiLCJVc2VyVXVpZCI6IjE0IiwiZXhwIjoxNzY1NzQyMzM2LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo1MjM4IiwiYXVkIjoiQWNjZXNzX1NlcnZpY2UifQ.l6nkKvNOUa0Pv570CEngdOWHB1x6qse2AIK19Jy8aa8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5111/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5111",
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Access",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"jane.doe@example.com\",\r\n    \"password\": \"hashed_password_123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5111/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5111",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Resources",
+			"item": [
+				{
+					"name": "Get Resources",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ3ZW5hczMzM0BleGFtcC5jb20iLCJqdGkiOiI0MDI0Y2QzYS04MzFkLTRhNTUtOWJkNC1jOWQzMjAyMGYxZTEiLCJVc2VyVXVpZCI6IjE0IiwiZXhwIjoxNzY1NzQyMzM2LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo1MjM4IiwiYXVkIjoiQWNjZXNzX1NlcnZpY2UifQ.l6nkKvNOUa0Pv570CEngdOWHB1x6qse2AIK19Jy8aa8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Franko\",\r\n    \"firstLastName\":\"Lola\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5111/Resources",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5111",
+							"path": [
+								"Resources"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Resource",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5111/Resources/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5111",
+							"path": [
+								"Resources",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
